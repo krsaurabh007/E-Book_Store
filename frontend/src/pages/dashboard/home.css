@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
+}
+
+.header {
+  background-color: rgb(237, 193, 193);
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.header .search {
+  flex-grow: 1;
+  margin: 0 30px;
+  position: relative;
+  max-width: 600px;
+}
+
+.header .search input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #754066;
+  border-radius: 12px;
+  background-color: rgb(248, 234, 243);
+}
+
+.header .header-icons {
+  display: flex;
+  gap: 40px;
+  margin-right: 14px;
+}
+
+.header .icon-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.header .icon {
+  height: 24px;
+  width: 24px;
+}
+
+.nav-header {
+  background-color: rgb(255, 224, 251);
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon-header-container {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-item button {
+  text-decoration: none;
+  color: rgb(171, 8, 122);
+  font-weight: bold;
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.nav-item button:hover {
+  color: rgb(77, 9, 140);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.dropdown-content button:hover {
+  color: rgb(75, 2, 58);
+  transform: scale(1.4);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+
